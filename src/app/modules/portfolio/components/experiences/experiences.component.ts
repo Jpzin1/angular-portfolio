@@ -1,13 +1,14 @@
 import { Component, signal } from '@angular/core';
 
 // Interface
-import { IExperiences } from '../interface/IExperiences.interface';
+import { IExperiences } from '../../interface/IExperiences.interface';
 
 @Component({
   selector: 'app-experiences',
+  standalone: true,
   imports: [],
   templateUrl: './experiences.component.html',
-  styleUrl: './experiences.component.scss'
+  styleUrl: './experiences.component.scss',
 })
 export class ExperiencesComponent {
   public arrayExperiences = signal<IExperiences[]>([
@@ -55,4 +56,3 @@ export class ExperiencesComponent {
     },
   ]);
 }
-

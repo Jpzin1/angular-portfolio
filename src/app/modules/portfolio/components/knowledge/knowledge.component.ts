@@ -5,9 +5,10 @@ import { IKnowledge } from '../../interface/IKnowledge.interface';
 
 @Component({
   selector: 'app-knowledge',
+  standalone: true,
   imports: [],
   templateUrl: './knowledge.component.html',
-  styleUrl: './knowledge.component.scss'
+  styleUrl: './knowledge.component.scss',
 })
 export class KnowledgeComponent {
   public arrayKnowledge = signal<IKnowledge[]>([
@@ -31,15 +32,5 @@ export class KnowledgeComponent {
       src: 'assets/icons/knowledge/nodejs.svg',
       alt: 'Ícone de conhecimento de nodejs',
     },
-    {
-      src: 'assets/icons/knowledge/java.svg',
-      alt: 'Ícone de conhecimento de java',
-    },
-    {
-      src: 'assets/icons/knowledge/python.svg',
-      alt: 'Ícone de conhecimento de python',
-    },   
   ]);
 }
-
-

@@ -11,7 +11,7 @@ describe('KnowledgeComponent', () => {
       imports: [KnowledgeComponent]
     })
     .compileComponents();
-
+    
     fixture = TestBed.createComponent(KnowledgeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

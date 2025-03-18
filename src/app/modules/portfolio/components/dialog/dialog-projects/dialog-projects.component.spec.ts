@@ -11,7 +11,7 @@ describe('DialogProjectsComponent', () => {
       imports: [DialogProjectsComponent]
     })
     .compileComponents();
-
+    
     fixture = TestBed.createComponent(DialogProjectsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
